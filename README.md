@@ -80,24 +80,6 @@ Key transformations:
 - Normalize multi-valued fields using `split()` and `explode()`.
 - Write the processed datasets to the Silver layer.
 
-Example:
-
-```python
-from pyspark.sql.functions import split, explode, trim
-
-df = df.withColumn(
-    "Group_ID",
-    explode(split("Group_ID", ","))
-)
-
-df = df.withColumn(
-    "Group_ID",
-    trim("Group_ID")
-)
-```
-
-A value such as `G001,G002,G003` becomes three separate rows, enabling more reliable joins and downstream analysis.
-
 ### 3. Gold Layer — Analytics-Ready Data
 
 The Gold layer contains curated datasets designed for reporting and business analysis.
@@ -233,17 +215,3 @@ Suggested validation checks include:
 - Improved data consistency and traceability.
 - Automated orchestration of dependent processing steps.
 - Analytics-ready datasets for downstream SQL and BI consumption.
-
-## Future Enhancements
-
-- Metadata-driven ingestion for additional datasets.
-- Incremental loading and change data capture where supported.
-- Automated data-quality reporting and alerting.
-- CI/CD for ADF and Databricks assets.
-- Improved pipeline observability and operational metrics.
-- Role-based access control and sensitive-data masking.
-- Power BI dashboards for claims and healthcare analytics.
-
-## Important Note
-
-Use synthetic or appropriately de-identified data in public repositories. Never commit production healthcare records, passwords, access keys, connection strings, or secret values.
