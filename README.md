@@ -124,22 +124,4 @@ Planned checks include:
 - Referential integrity where relationships are defined
 - Business-rule validation
 
-## Security
 
-- Store secrets in Azure Key Vault or an approved secrets manager.
-- Use managed identity where supported and configured.
-- Apply least-privilege permissions.
-- Do not commit credentials, access keys, connection strings, or sensitive data.
-
-## Future Enhancements
-
-- Metadata-driven ingestion
-- Incremental loading and CDC where supported
-- Automated data-quality reporting and alerts
-- CI/CD for Azure Data Factory and Databricks assets
-- Pipeline observability and operational metrics
-- Sensitive-data masking and role-based access controls
-
-## Project Status
-
-This repository currently provides the project structure and implementation plan. Update this section as each component is implemented and tested.
