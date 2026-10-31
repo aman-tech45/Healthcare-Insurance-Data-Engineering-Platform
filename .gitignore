@@ -10,7 +10,6 @@ __pycache__/
 # Environment variables and secrets
 .env
 .env.*
-aa.env
 
 # IDE
 .vscode/
