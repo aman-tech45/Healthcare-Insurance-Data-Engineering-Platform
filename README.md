@@ -331,7 +331,7 @@ This project demonstrates practical exposure to:
 
 ## 12. Disclaimer
 
-This repository is intended for educational and portfolio demonstration purposes. It is not a certified hospital information system and should not be used to make clinical, patient-care, staffing, or emergency decisions. Do not publish real patient data, credentials, connection strings, or storage access keys.
+This repository is intended for educational and portfolio demonstration purposes. It is not a certified hospital information system and should not be used to make clinical, patient-care, staffing, or emergency decisions.
 
 ---
 
